@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#128c7e">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Aperto, Pontuou</title>
+</head>
+<body>
+  <main class="card">
+    <h1>Aperto, Pontuou</h1>
+
+    <div class="relogio" id="relogio">--:--:--</div>
+    <div class="data" id="data"></div>
+
+    <label for="nome">Seu nome</label>
+    <input id="nome" type="text" placeholder="Digite seu nome" autocomplete="name" maxlength="60">
+    <div class="aviso" id="aviso"></div>
+
+    <div class="botoes">
+      <button class="entrada" id="btnEntrada" type="button">Ponto de Entrada</button>
+      <button class="saida" id="btnSaida" type="button">Ponto de Saída</button>
+    </div>
+
+    <div class="ultimo" id="ultimo"></div>
+
+    <details>
+      <summary>Configuração do WhatsApp</summary>
+      <label for="telefone">Seu número (opcional)</label>
+      <input id="telefone" type="tel" inputmode="numeric" placeholder="DDD + número, ex: 67999998888">
+      <p class="dica">
+        Com o número, a mensagem abre direto na sua conversa com você mesmo (funciona como um grupo só seu).
+        Sem número, o WhatsApp abre a lista para você escolher o grupo "Aperto, Pontuou".
+      </p>
+    </details>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

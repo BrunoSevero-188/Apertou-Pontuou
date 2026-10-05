@@ -1,0 +1,10 @@
+{
+  "name": "aperto-pontuou",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de ponto via WhatsApp",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "vercel --prod"
+  }
+}

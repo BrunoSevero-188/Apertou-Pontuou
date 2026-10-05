@@ -1,0 +1,15 @@
+{
+  "name": "Aperto, Pontuou",
+  "short_name": "Pontuou",
+  "description": "Registro de ponto de entrada e saída via WhatsApp",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2f5f4",
+  "theme_color": "#128c7e",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "public/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "public/png" }
+  ]
+}

@@ -1,0 +1,132 @@
+:root {
+  --verde: #128c7e;
+  --verde-escuro: #0b6b5f;
+  --vermelho: #d9534f;
+  --vermelho-escuro: #b83f3b;
+  --fundo: #f2f5f4;
+  --texto: #1f2a28;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 22px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--verde);
+}
+
+.relogio {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 14px 0 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.data {
+  text-align: center;
+  color: #667;
+  margin-bottom: 22px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 14px 0 6px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: 2px solid #d7dedc;
+  border-radius: 12px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--verde);
+}
+
+.aviso {
+  color: var(--vermelho);
+  font-size: 0.85rem;
+  margin-top: 8px;
+  min-height: 1.1em;
+}
+
+.botoes {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+button {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.entrada { background: var(--verde); }
+.entrada:active { background: var(--verde-escuro); }
+
+.saida { background: var(--vermelho); }
+.saida:active { background: var(--vermelho-escuro); }
+
+.ultimo {
+  display: none;
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--fundo);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: #556;
+}
+
+details {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: #556;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dica {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: #889;
+}
